@@ -14,8 +14,8 @@ def parse_category(response):
                      '/ul[@class="classify_kind_detail"]/li/a/@href')
     items = loader.load_item()
     # {"影视写真": "http://category.dangdang.com/cp01.01.13.00.00.00.html"}
-    result = dict(zip(items.get("category"), items.get("url")))
-    return result
+    #result = dict(zip(items.get("category"), items.get("url")))
+    return items
 
 
 class DdSpider(scrapy.Spider):
